@@ -2,14 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 :root {
-    --bg: #080b16;
-    --card: rgba(255, 255, 255, 0.045);
-    --text: #f5f5ff;
-    --muted: #a1a5bb;
-    --border: rgba(255, 255, 255, 0.11);
-    --purple: #a78bfa;
-    --blue: #60a5fa;
-    --gradient: linear-gradient(120deg, #a78bfa, #60a5fa);
+    --bg: #080F0D;
+    --card: rgba(255,255,255,0.045);
+    --text: #F4F5EF;
+    --muted: #A5B3A9;
+    --border: rgba(184,213,165,0.15);
+
+    --purple: #B8D5A5;
+    --blue: #D6B879;
+
+    --gradient: linear-gradient(
+        120deg,
+        #B8D5A5,
+        #D6B879
+    );
 }
 
 * {
@@ -62,16 +68,14 @@ button {
 }
 
 .glow-one {
-    background: #7139e6;
-    top: 5%;
-    left: -150px;
+    background: #1F6B50;
 }
 
 .glow-two {
-    background: #1765ce;
-    right: -180px;
-    top: 45%;
+    background: #B8D5A5;
+    opacity: 0.12;
 }
+
 
 /* Navigation */
 
@@ -307,12 +311,10 @@ button {
     transform: rotate(-8deg);
 }
 
-.main-card h3 {
-    text-align: center;
-    font: 600 26px 'Space Grotesk', sans-serif;
-    line-height: 1.25;
-}
 
+.main-card {
+    border-color: rgba(184,213,165,0.35);
+}
 .gradient-text {
     background: var(--gradient);
     color: transparent;
@@ -510,15 +512,15 @@ button {
 }
 
 .art-one {
-    background: linear-gradient(135deg, #4338ca, #a78bfa);
+    background: linear-gradient(135deg, #10251D, #1F6B50);
 }
 
 .art-two {
-    background: linear-gradient(135deg, #0f766e, #60a5fa);
+    background: linear-gradient(135deg, #193B30, #B8D5A5);
 }
 
 .art-three {
-    background: linear-gradient(135deg, #be185d, #8b5cf6);
+    background: linear-gradient(135deg, #26372D, #B58D50);
 }
 
 .project-category {
