@@ -1,80 +1,253 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anjali Tiwari | Portfolio</title>
+    <meta name="description" content="Anjali Tiwari's personal portfolio - Computer Science student, developer and aspiring data scientist.">
+    <title>Anjali Tiwari | Creative Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-       <nav>
-    <h2>My Portfolio</h2>
 
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-    <header>
-        <h1>Anjali Tiwari</h1>
-        <p>Computer Science & IT Student | Aspiring Data Scientist</p>
-    </header>
+    <!-- Background effects -->
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+    <div class="grid-background"></div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Hello! I am Anjali, a BTech Computer Science and IT student
-            passionate about programming, data science and artificial intelligence.
-            I enjoy learning new technologies and building projects.
-        </p>
-    </section>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#home" class="logo">A<span>.</span></a>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p>BTech in Computer Science and Information Technology</p>
-    </section>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            ☰
+        </button>
 
-    <section id="skills">
-        <h2>My Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>C++</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>SQL</li>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
+        <button class="theme-button" id="themeButton" aria-label="Toggle theme">
+            ☀
+        </button>
+    </nav>
 
-        <div class="project">
-            <h3>Image Pixel Manipulator</h3>
-            <p>A Python-based project for image pixel manipulation and restoration.</p>
-        </div>
+    <!-- Hero Section -->
+    <main>
+        <section class="hero" id="home">
 
-        <div class="project">
-            <h3>ResQAI</h3>
-            <p>An AI-powered emergency response platform.</p>
-        </div>
-    </section>
+            <div class="hero-content">
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    Exploring new opportunities
+                </div>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: your-email@example.com</p>
-        <p>GitHub: <a href="https://github.com/YOUR-USERNAME">Visit my GitHub</a></p>
-    </section>
+                <p class="eyebrow">HELLO, I'M</p>
 
-    <button id="themeButton">Change Theme</button>
+                <h1>
+                    Anjali <span>Tiwari.</span>
+                </h1>
+
+                <h2>Building ideas into <span id="typingText">reality.</span></h2>
+
+                <p class="hero-description">
+                    A Computer Science and IT student passionate about
+                    Data Science, Artificial Intelligence and creating
+                    meaningful digital experiences.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="primary-button">Explore My Work ↗</a>
+                    <a href="#contact" class="secondary-button">Let's Connect</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/YOUR-USERNAME" target="_blank">GitHub ↗</a>
+                    <a href="https://www.linkedin.com/" target="_blank">LinkedIn ↗</a>
+                </div>
+            </div>
+
+            <!-- 3D visual -->
+            <div class="hero-visual">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="floating-card main-card tilt-card">
+                    <div class="card-top">
+                        <span class="card-dot"></span>
+                        <span>CREATIVE MINDSET</span>
+                    </div>
+
+                    <div class="profile-symbol">A</div>
+
+                    <h3>Think.</h3>
+                    <h3 class="gradient-text">Create.</h3>
+                    <h3>Innovate.</h3>
+
+                    <div class="card-bottom">
+                        <span>DATA × CODE × IDEAS</span>
+                        <span>✦</span>
+                    </div>
+                </div>
+
+                <div class="floating-tag tag-one">✦ Python</div>
+                <div class="floating-tag tag-two">◈ Data Science</div>
+                <div class="floating-tag tag-three">⌘ Developer</div>
+            </div>
+
+            <div class="scroll-indicator">SCROLL TO EXPLORE ↓</div>
+        </section>
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="section-heading reveal">
+                <p class="eyebrow">01 / ABOUT ME</p>
+                <h2>A little about <span>my journey.</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card glass-card tilt-card reveal">
+                    <div class="about-icon">✧</div>
+                    <h3>Curious by nature.</h3>
+                    <p>
+                        I'm pursuing BTech in Computer Science and Information
+                        Technology. I enjoy exploring how technology can solve
+                        real-world problems.
+                    </p>
+                </div>
+
+                <div class="about-card glass-card tilt-card reveal">
+                    <div class="about-icon">⌘</div>
+                    <h3>Learning by building.</h3>
+                    <p>
+                        From programming to AI-powered applications, I believe
+                        the best way to learn is to experiment, build and improve.
+                    </p>
+                </div>
+
+                <div class="about-card glass-card tilt-card reveal">
+                    <div class="about-icon">◎</div>
+                    <h3>Driven by impact.</h3>
+                    <p>
+                        My interests lie in Data Science, Machine Learning and
+                        turning complex data into meaningful insights.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section" id="skills">
+            <div class="section-heading reveal">
+                <p class="eyebrow">02 / MY TOOLKIT</p>
+                <h2>Technologies I <span>work with.</span></h2>
+            </div>
+
+            <div class="skills-container glass-card reveal">
+                <div class="skill-item"><span>🐍</span> Python</div>
+                <div class="skill-item"><span>⚙️</span> C++</div>
+                <div class="skill-item"><span>🌐</span> HTML</div>
+                <div class="skill-item"><span>🎨</span> CSS</div>
+                <div class="skill-item"><span>⚡</span> JavaScript</div>
+                <div class="skill-item"><span>🗄️</span> SQL</div>
+                <div class="skill-item"><span>📊</span> Data Analysis</div>
+                <div class="skill-item"><span>🤖</span> Machine Learning</div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="projects">
+            <div class="section-heading reveal">
+                <p class="eyebrow">03 / SELECTED WORK</p>
+                <h2>Things I've <span>built.</span></h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card glass-card tilt-card reveal">
+                    <div class="project-number">01</div>
+                    <div class="project-art art-one">▦</div>
+                    <p class="project-category">PYTHON · IMAGE PROCESSING</p>
+                    <h3>Image Pixel Manipulator</h3>
+                    <p>
+                        A Python-based toolkit for identifying and restoring
+                        unwanted image pixels while preserving important details.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>NumPy</span>
+                        <span>OpenCV</span>
+                    </div>
+                    <a href="https://github.com/CBYERDECODE/image_pixel_manipulator"
+                       target="_blank" class="project-link">View Project ↗</a>
+                </article>
+
+                <article class="project-card glass-card tilt-card reveal">
+                    <div class="project-number">02</div>
+                    <div class="project-art art-two">✧</div>
+                    <p class="project-category">AI · WEB DEVELOPMENT</p>
+                    <h3>ResQAI</h3>
+                    <p>
+                        An AI-powered emergency response platform designed
+                        to support smarter incident reporting and response.
+                    </p>
+                    <div class="project-tags">
+                        <span>AI</span>
+                        <span>JavaScript</span>
+                        <span>Web</span>
+                    </div>
+                    <a href="https://github.com/CBYERDECODE/Promptwars"
+                       target="_blank" class="project-link">View Project ↗</a>
+                </article>
+
+                <article class="project-card glass-card tilt-card reveal">
+                    <div class="project-number">03</div>
+                    <div class="project-art art-three">◈</div>
+                    <p class="project-category">AI · ACCESSIBILITY</p>
+                    <h3>Smriti-Silk</h3>
+                    <p>
+                        A multilingual cognitive screening concept focused
+                        on accessible and inclusive technology.
+                    </p>
+                    <div class="project-tags">
+                        <span>AI</span>
+                        <span>Healthcare Tech</span>
+                        <span>Multilingual</span>
+                    </div>
+                    <a href="https://smriti-silk.vercel.app/"
+                       target="_blank" class="project-link">View Project ↗</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section contact-section" id="contact">
+            <div class="contact-card glass-card reveal">
+                <p class="eyebrow">04 / GET IN TOUCH</p>
+                <h2>Have an idea?<br><span>Let's build it.</span></h2>
+                <p>
+                    I'm always interested in learning, collaborating
+                    and exploring new opportunities.
+                </p>
+                <a href="mailto:YOUR-EMAIL@example.com" class="primary-button">
+                    Say Hello ↗
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#home" class="logo">A<span>.</span></a>
+        <p>Designed & built by Anjali Tiwari © <span id="year"></span></p>
+        <a href="#home" class="back-top">Back to top ↑</a>
+    </footer>
 
     <script src="script.js"></script>
 </body>
-<footer>
-    <p>&copy; 2026 Anjali Tiwari. All Rights Reserved.</p>
-    <p>Built with HTML, CSS and JavaScript.</p>
-</footer>
 </html>
